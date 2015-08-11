@@ -1,18 +1,32 @@
 <?php
     class AnagramCheck
     {
-        function checkAnagram($input_word, $input_array)
+        function checkAnagram($input_word, $input_compare)
         {
-            $output_array = array();
-
-            foreach ($input_array as $key => $word)
+            $compare_array = explode(", ", $input_compare);
+            foreach ($compare_array as $word)
             {
-                if(count_chars($input_word, 1) == ($input_word, 1));
+                $split_word = str_split($input_word);
+                $sort_word = sort($split_word);
+                $split_compare = str_split($word);
+                $sort_compare = sort($split_compare);
+                if ($sort_word == $sort_compare)
                 {
-                    array_push($output_array, $word[$key]);
+                    return $word;
                 }
             }
-            return $output_array;
         }
     }
  ?>
+
+
+
+
+
+
+
+
+$compare_array = explode(" ", $input_compare);
+
+$compare_array = explode(", ", $input_compare);
+foreach ($compare_array as $word)
