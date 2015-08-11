@@ -6,3 +6,10 @@ $array = array["a"];
 
 $input ="c"
 $array = array["f", "l", "a", "c"];
+
+$input = "on"
+$array = ["yes", "no", "hello"]
+
+
+$input ="on"
+$array = ["hello", "yes"]

@@ -4,4 +4,6 @@ It returns single-character strings in the array if they are an anagram of the i
 
 It returns single-character strings in the array if they are an anagram of the initial input
 
-It returns multi-character strings in the array 
+It returns multi-character strings in the array if they are anagrams of the initial string input
+
+Will return nothing if no array items match the initial input
