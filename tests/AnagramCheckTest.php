@@ -12,7 +12,7 @@
 
              $result = $test_AnagramCheck->checkAnagram($input, $array);
 
-             $this->AssertEquals("a", $result);
+             $this->AssertEquals(["a"], $result);
          }
 
          function test_checkAnagram_inverse()
@@ -23,18 +23,18 @@
 
              $result = $test_AnagramCheck->checkAnagram($input, $array);
 
-             $this->AssertEquals("no", $result);
+             $this->AssertEquals(["no"], $result);
          }
 
          function test_checkAnagram_array()
          {
              $test_AnagramCheck = new AnagramCheck;
-             $input = "on";
-             $array = "no, yes, hello";
+             $input = "one";
+             $array = "no, eno, noe, yes, hello";
 
              $result = $test_AnagramCheck->checkAnagram($input, $array);
 
-             $this->AssertEquals("no", $result);
+             $this->AssertEquals(["eno", "noe"], $result);
          }
 
      }
