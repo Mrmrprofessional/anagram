@@ -1,0 +1,8 @@
+INPUT
+
+$input = "a"
+$array = array["a"];
+
+
+$input ="c"
+$array = array["f", "l", "a", "c"];

@@ -1,0 +1,7 @@
+BEHAVIOR
+
+It returns single-character strings in the array if they are an anagram of the initial input
+
+It returns single-character strings in the array if they are an anagram of the initial input
+
+It returns multi-character strings in the array 
